@@ -1,0 +1,6 @@
+meshlabserverpath = '/home/user/AppImage/MeshLabServer2020.09-linux.AppImage';
+srcDir = '/home/user/Dataset/ModelNet10/ModelNet10/';   % Directory containing CAD models
+srcExt = '.off'; % File extension in the srcDir '.off' '.ply' '.obj'
+sizen = 128;    % voxel resolution for the output meshing
+dstDir = '/home/user/Dataset/ModelNet10/V' + str2num(sizen) + 'A/';  % Directory to store processed manifold meshes
+numcores = eval('feature(''numcores'')');
